@@ -1,9 +1,13 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    /*background-color: rgb(75, 74, 74);*/
+    margin-left: 0;
+    padding: 0;
+    position: relative;
+    background-color: rgb(75, 74, 74);
 }
 .navbar{
     background-color: rgb(58, 58, 58);
+    border-bottom: 3px solid #fffaf0;
 }
 .navbar-brand{
     color: #FFD150;
@@ -13,4 +17,15 @@ body{
 }
 .landing{
     background-color: rgb(75, 74, 74);
+}
+footer {
+    text-align: left;
+}
+footer .col-md-2 p:hover{
+    color: #ffa500;
+    text-decoration: underline;
+}
+footer .icons:hover{
+    color: #ffa500;
+    transform: translateX(5%);
 }
