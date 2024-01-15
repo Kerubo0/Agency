@@ -1,0 +1,16 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    /*background-color: rgb(75, 74, 74);*/
+}
+.navbar{
+    background-color: rgb(58, 58, 58);
+}
+.navbar-brand{
+    color: #FFD150;
+}
+.nav-item{
+    color: white;
+}
+.landing{
+    background-color: rgb(75, 74, 74);
+}
