@@ -119,8 +119,23 @@ a{
         grid-auto-columns: 1fr;
     }
 }
+
 .landing{
     background-color: rgb(75, 74, 74);
+}
+.btn {
+    display: inline;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+   background-color: #ffc31e;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #b9a329;
 }
 footer {
     text-align: left;

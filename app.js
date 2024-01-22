@@ -11,3 +11,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }))
+
+
+    var externalUrl = document.getElementsByClassName("btn");
+    for (var i= 0; i< externalUrl.length ; i++){
+     externalUrl[i].addEventListener("click", goToExternalLink)
+    }
+ 
+    function goToExternalLink(){
+     window.location.href = "https://calendly.com/info-o0/30min"
+    }
