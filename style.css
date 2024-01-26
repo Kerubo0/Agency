@@ -219,6 +219,7 @@ button .btn-close {
 
 .cta-btn {
     width: 80%;
+    max-width: 500px;
     background-color: #ffc31e;
     color: #242323;
 }
@@ -313,12 +314,17 @@ button .btn-close {
 .services-title  {
     color: #fff;
     text-align: center;
+    margin-bottom: 48px;
+}
+
+.services-title h2 {
+    margin-bottom: 16px;
 }
 
 .services-container p {
     font-size: 18px;
     color: #b2a484;
-    margin: 28px 0 28px 0;
+    margin: 28px 0;
     text-align: center;
 }
 
@@ -327,7 +333,7 @@ button .btn-close {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 12px;
     padding: 20px;
-    margin-bottom: 56px;
+    margin-bottom: 16px;
 }
 
 .services-list h5 {
@@ -350,4 +356,8 @@ button .btn-close {
 
 h5 img {
     width: 48px;
+}
+
+.min.hero-image {
+    min-width: 280px;
 }
