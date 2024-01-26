@@ -365,3 +365,8 @@ h5 img {
 .section-spo {
     color: #b2a484;
 }
+
+.proof {
+    gap: 16px;
+    align-items: center;
+}
