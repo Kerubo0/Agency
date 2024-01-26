@@ -396,3 +396,20 @@ h5 img {
     font-size: 16px;
 }
 
+.social-proof-2 {
+    margin: 44px 0;
+}
+
+.social-proof-2 h2.montserrat {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 48px;
+}
+
+.container.text-center {
+    margin-bottom: 36px;
+}
+
+.social-proof .cta-btn {
+    margin: 48px;
+}
