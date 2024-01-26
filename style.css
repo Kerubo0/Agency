@@ -223,7 +223,7 @@ button .btn-close {
     color: #242323;
 }
 
-.hero-text p {
+.hero-text p, .services-title span {
     font-size: 16px;
     line-height: 32px;
     font-weight: 400;
@@ -269,6 +269,19 @@ button .btn-close {
     background-color: #9b9b9b;
 }
 
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.rating p {
+    font-weight: 600;
+}
+
 .fa-star {
     color: #ffd43b;
 }
@@ -277,7 +290,7 @@ button .btn-close {
     text-align: center;
 }
 
-.product-shot-title h2{
+.product-shot-title h2, .services-title h2{
     color: #ffd43b;
     text-align: center;
     font-size: 24px;
@@ -295,4 +308,46 @@ button .btn-close {
 
 .screenshots {
     border-radius: 8px;
+}
+
+.services-title  {
+    color: #fff;
+    text-align: center;
+}
+
+.services-container p {
+    font-size: 18px;
+    color: #b2a484;
+    margin: 28px 0 28px 0;
+    text-align: center;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+    padding: 20px;
+    margin-bottom: 56px;
+}
+
+.services-list h5 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    border: 0.4px #9b9b9b solid;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+@media (max-width: 767px) {
+    .services-list {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+        gap: 10px;
+    }
+
+}
+
+h5 img {
+    width: 48px;
 }
