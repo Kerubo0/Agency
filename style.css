@@ -1,18 +1,31 @@
 
 *, *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 14px;
+    background-color: #23232a;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
 }
 
 li{
@@ -23,6 +36,8 @@ a{
     color: white;
     text-decoration: none;
 }
+
+/* ------- HEADER --------- */
 
 header nav{
     background-color: #4c4942;
@@ -58,10 +73,9 @@ button .btn-close {
     }
 }
 
-.login-btn{
+.btn{
     background-color: #ffd150;
     padding: 8px 16px;
-    width: 120px;
     color: #111111;
     border: none;
     border-radius: 4px;
@@ -69,8 +83,8 @@ button .btn-close {
     transition: 0.3s ease-in-out;
 }
 
-.login-btn:hover,
-.login-btn:focus {
+.btn:hover,
+.btn:focus {
     color: #fff;
     background-color: #ffa500;
 }
@@ -154,7 +168,7 @@ button .btn-close {
 }
 
 .dropdown-menu li a {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
 }
 
@@ -163,3 +177,72 @@ button .btn-close {
     background-color: #4c4942;
 }
 
+/* ------- HERO --------- */
+
+
+.hero {
+    height: 100vh;
+}
+
+.hero-container {
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 48px;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 28px;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-weight: 500;
+    line-height: 48px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.yellow-hero-text {
+    color: #ffd150;
+}
+
+.selling-point {
+    font-size: 24px;
+    color: #b2a484;
+}
+
+.cta-btn {
+    width: 80%;
+    background-color: #ffc31e;
+    color: #242323;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    padding: 28px 0;
+}
+
+.hero-image-container {
+    flex: 1;
+}
+
+.hero-image {
+    width: 72%;
+    min-width: 360px;
+    display: block;
+}
+
+@media (max-width: 850px) {
+    .hero-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

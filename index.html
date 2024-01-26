@@ -22,103 +22,146 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand me-auto" href="#"> 
-                    <img src="agency/Sauti logo1.jpg" height="40"  alt="">
-                </a>
-                
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <site-container class="flex column">
+
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand me-auto" href="#"> 
+                        <img src="agency/Sauti logo1.jpg" height="40"  alt="">
+                    </a>
+                    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Email Marketing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            SMS Marketing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Social Media Management
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Google ADs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Conversation Rate Optimization
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Landing Page Creation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            SEO
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">Blog</a>
+                            </li>
+                        </ul>
+                        </div>
                     </div>
-                    <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Email Marketing
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        SMS Marketing
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Social Media Management
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Google ADs
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Conversation Rate Optimization
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Landing Page Creation
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        SEO
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Blog</a>
-                        </li>
-                    </ul>
-                    </div>
+
+                    <a href="#" class="btn login-btn"> 
+                        GET STARTED 
+                    </a>
+
+                    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </button>
+
                 </div>
+            </nav>
+        </header>
 
-                <a href="#" class="login-btn"> Login </a>
-
-                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+        <section class="hero">
+            <div class="hero-container flex">
+                <div class="hero-text">
+                    <div class="main-hero-text flex column center">
+                        <h1>
+                            THE 
+                            <span class="yellow-hero-text">
+                                #1 CONTECT MARKETING
+                            </span> 
+                            AGENCY THAT
+                            WILL TURN YOUR WEBSITE INTO A MONEY
+                            PRINTER <br>
+                            <span class="selling-point">
+                                (OR WE DON'T GET PAID!)
+                            </span>
+                        </h1>
                     </div>
-                </button>
+                    <div class="sub-hero-text">
+                        <p>
+                            Tired of Getting Ripped Off By Filthy Marketing Scum Bugs? Our Team Of Rockstar marketers Will Show You
+                            A Secret 8- Step Selling System That Has Helped Brands Like Yours Generate Over $150 Million in Sales
+                        </p>
+                    </div>
 
+                    <div class="cta-btn-container">
+                        <button class="btn cta-btn">
+                        BOOK YOUR FREE 30-MINUTE STRATEGY SESSION </button>
+                    </div>
+
+                </div>
+                
+                <div class="hero-image-container">
+                    <img src="agency/31385199_7809946-removebg-preview 1.svg" alt="Example Image" class="hero-image">
+                </div>
             </div>
-          </nav>
-    </header>
+        </section>
+
+    </site-container>
 </body>
 </html>
