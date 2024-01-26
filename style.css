@@ -39,7 +39,7 @@ a{
 
 /* ------- HEADER --------- */
 
-header nav{
+header nav, footer {
     background-color: #4c4942;
     
 }
@@ -412,4 +412,119 @@ h5 img {
 
 .social-proof .cta-btn {
     margin: 48px;
+}
+
+.footer {
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 36px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 28px 80px 0 28px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-basis: 300px;
+    gap: 28px;
+}
+
+.sauti-info {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.logo-wrapper {
+    gap: 20px;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.sign-off {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+ 
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.offerings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.offerings > div {
+    margin-right: 20px;
+}
+
+.products,
+.resources,
+.company,
+.legal {
+    flex: 1;
+}
+
+h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.copyright-call {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright-call p {
+    color: #9b9b9b;
+}
+
+@media (max-width: 800px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .sauti-info {
+        margin-bottom: 20px;
+    }
+
+    .offerings {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
