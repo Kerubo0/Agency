@@ -199,10 +199,13 @@ button .btn-close {
     color: #fff;
 }
 
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
 .hero-text h1 {
     font-weight: 500;
     line-height: 48px;
-    font-family: "Montserrat", sans-serif;
 }
 
 .yellow-hero-text {
@@ -238,11 +241,58 @@ button .btn-close {
     display: block;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 890px) {
     .hero-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+
+    .social-proof-container {
+        position: relative;
+        top: 50vh;
+        margin: 150px 0 0 0;
+    }
+
+    .product-shot {
+        margin-top: 340px;
+    }
+}
+
+/* ------- SOCIAL PROOF--------- */
+
+
+.social-proof-container {
+    margin: 100px 0;
+    padding: 100px;
+    background-color: #9b9b9b;
+}
+
+.fa-star {
+    color: #ffd43b;
+}
+
+.brands h2 {
+    text-align: center;
+}
+
+.product-shot-title h2{
+    color: #ffd43b;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 36px;
+}
+
+.screenshots-container {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.screenshots-container > {
+    flex: 1;
+}
+
+.screenshots {
+    border-radius: 8px;
 }
