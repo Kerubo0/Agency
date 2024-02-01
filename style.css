@@ -311,7 +311,7 @@ button .btn-close {
     border-radius: 8px;
 }
 
-.services-title  {
+.s-title  {
     color: #fff;
     text-align: center;
     margin-bottom: 48px;
@@ -328,12 +328,13 @@ button .btn-close {
     text-align: center;
 }
 
-.services-list {
+.services-list:not(.services-list.clients) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 12px;
     padding: 20px;
     margin-bottom: 16px;
+    flex:none;
 }
 
 .services-list h5 {
@@ -375,13 +376,57 @@ h5 img {
     margin: 50px 0;
 }
 
+.services-container .client-info img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.carousel-wrapper {
+    margin: 4% auto;
+}
+
+.clients-carousel {
+    width: 75%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.clients-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+#backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.services-list.clients {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 12px;
+    padding: 6px;
+    flex: none;
+}
+
 .services-list.clients h5{
     flex-direction: column;
     padding: 16px 36px;
     line-height: 28px;
+    transition: 0.3s ease-in-out;
+}
+
+.services-list.clients h5:hover{
+    background-color: #3a3a42;
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .services-title.testimonial-salute {
+    color: #fff;
     padding: 0 24px;
     margin: 0;
 }
