@@ -13,8 +13,8 @@ body {
     font-style: normal;
     font-size: 18px;
     background-color: #23232a;
-   /* width: 100%;*/
-   overflow-x: hidden;
+    width: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -109,7 +109,7 @@ button .btn-close {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 16px;
 }
 
 /*.nav-menu{
@@ -398,12 +398,12 @@ button .btn-close {
 .services-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);;
+   grid-template-rows: repeat(3, 1fr);;
     gap: 12px;
     padding: 20px;
     margin-bottom: 16px;
 
 }
-
 
 .services-list h5 {
     display: flex;
