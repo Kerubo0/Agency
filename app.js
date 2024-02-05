@@ -1,23 +1,45 @@
-const hamburger =document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+/*const container = document.getElementById('slider-container');
+let currentIndex = 0;
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
+function nextSlide() {
+    const itemWidth = container.children[0].offsetWidth;
+    currentIndex = (currentIndex + 1) % container.children.length;
+    container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
 
-document.querySelectorAll(".nav-link").forEach(n => n.
-    addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }))
+function prevSlide() {
+    const itemWidth = container.children[0].offsetWidth;
+    currentIndex = (currentIndex - 1 + container.children.length) % container.children.length;
+    container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
 
-
-    var externalUrl = document.getElementsByClassName("btn");
-    for (var i= 0; i< externalUrl.length ; i++){
-     externalUrl[i].addEventListener("click", goToExternalLink)
-    }
- 
-    function goToExternalLink(){
-     window.location.href = "https://calendly.com/info-o0/30min"
-    }
+setInterval(nextSlide, 3000);*/
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      center: true,
+      nav:true,
+      NavText:[
+        "<i class= 'fa fa-angle-left'></i>",
+        "<i class= 'fa fa-angle-right'></i>",
+      ],
+      responsive:{
+          0:{
+              items:1,
+              
+          },
+          600:{
+              items:3,
+             
+          },
+          //1000:{
+              //items:5,
+             
+          //}
+      }
+    })
+  })
+  
+  
