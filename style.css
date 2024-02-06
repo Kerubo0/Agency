@@ -287,7 +287,7 @@ button .btn-close {
     }
 
     .product-shot {
-        margin-top: 340px;
+        margin-top: 30px;
     }
 }
 
@@ -334,7 +334,7 @@ button .btn-close {
 }
 
 .product-shot{
-    padding: 10px;
+    padding: 5px;
    
 }
 
@@ -569,7 +569,8 @@ p {
     margin: 0;
     margin-bottom: 5px;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .copyright-call {
@@ -608,6 +609,12 @@ p {
     transform: scale(1.15);
     opacity: 1;
    /* background-color: black;*/
+  }
+
+  @media (max-width: 1024px) {
+    .slider .owl-item.active.center {
+        transform: scale(0.9);
+    }
   }
   
   .slider-container{
