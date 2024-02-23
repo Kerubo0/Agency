@@ -348,7 +348,7 @@ button .btn-close {
 }
 
 @media (max-width: 767px) {
-    .services-list {
+    .services-list:not(.services-list.clients ) {
         grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
         gap: 10px;
     }
@@ -389,7 +389,6 @@ h5 img {
     width: 75%;
     max-width: 900px;
     display: flex;
-    flex-direction: row;
     overflow-x: scroll;
 }
 
@@ -410,6 +409,27 @@ h5 img {
     gap: 12px;
     padding: 6px;
     flex: none;
+}
+
+@media (max-width: 767px) {
+    
+    .services-list.clients:nth-child(2) {
+        margin: 0 270px;
+    }
+
+    #backBtn, #nextBtn {
+        width: 30px;
+        margin: 20px;
+    }
+
+    .services-list.clients h5{
+        margin-top: 20px;
+    }
+
+    .services-list.clients h5:hover{
+        transform: scale(1.001);
+    }
+    
 }
 
 .services-list.clients h5{
