@@ -699,5 +699,27 @@ p {
       }
     }
   }
-
   
+.brands .container {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.brands .container.text-center .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.brands .container.text-center .col {
+    flex: 1;
+    margin: 20px; 
+    text-align: center;
+    max-width: 33%; 
+}
+
+@media (max-width: 768px) { 
+    .brands .container.text-center .col {
+        max-width: 100%; 
+    }
+}
