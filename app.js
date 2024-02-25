@@ -1,19 +1,7 @@
-/*const container = document.getElementById('slider-container');
-let currentIndex = 0;
 
-function nextSlide() {
-    const itemWidth = container.children[0].offsetWidth;
-    currentIndex = (currentIndex + 1) % container.children.length;
-    container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-}
 
-function prevSlide() {
-    const itemWidth = container.children[0].offsetWidth;
-    currentIndex = (currentIndex - 1 + container.children.length) % container.children.length;
-    container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-}
 
-setInterval(nextSlide, 3000);*/
+
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
       loop:true,

@@ -18,12 +18,6 @@ body {
 
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        width: 100vw;
-    }
-}
-
 section {
     margin: 0;
     padding: 0;
@@ -55,12 +49,7 @@ a{
 
 /* ------- HEADER --------- */
 
-/*header nav, footer {
-    background-color: #4c4942;
-    
-}*/
-
-/*.navbar-toggler {
+.navbar-toggler {
     border: none;
     font-size: 1.25 rem;
 }
@@ -87,15 +76,16 @@ button .btn-close {
     .nav-item .nav-link:hover, .nav-item .nav-link.active{
         border-bottom: 1px solid #ffd150;
     }
-}*/
+}
 
 .btn{
     background-color: #ffd150;
     padding: 8px 16px;
     color: #111111;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     text-align: center;
+    font-weight: 600;
     transition: 0.3s ease-in-out;
 }
 
@@ -112,7 +102,7 @@ button .btn-close {
     padding: 0 16px;
 }
 
-/*.nav-menu{
+.nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +112,7 @@ button .btn-close {
     font-size: 2rem;
 }
 
-/*.hamburger {
+.hamburger {
     display: none;
     cursor: pointer;
 }
@@ -134,7 +124,7 @@ button .btn-close {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: #ffd150;
 }
 
 @media (max-width:991px){
@@ -157,7 +147,7 @@ button .btn-close {
         top: 70px;
         gap:0 ;
         flex-direction: column;
-        background-color: #262626;
+        /*background-color: #262626;*/
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -191,7 +181,7 @@ button .btn-close {
 .dropdown-menu li a:hover {
     color: #ffd150;
     background-color: #4c4942;
-}*/
+}
 
 .stars-container {
     display: inline-block; /* Display stars in line */
@@ -206,6 +196,105 @@ button .btn-close {
     padding: 0px;
 }
 
+/*.navbar{
+width: 100vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+position: relative;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-left: 30px; 
+    
+
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+   /* text-transform: uppercase ;*/
+/*}
+
+.menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #ffd150;
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu{
+    position: absolute;
+    color: #ffd150;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+
+#check {display: none;}
+@media(max-width: 767px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #3f3f3f;
+        transition:  all 0.2s ease-in-out;
+    }*/
+    /*.menu li {margin-top: 40px ;}*/
+   /* .menu li a { padding: 10px;}
+    .open-menu, .close-menu { 
+        display: block; 
+        margin-left: 30px ;
+    }
+    #check:checked ~ .menu{right: 0;}
+}
+
+.btn{
+    background-color: #ffd150;
+    padding: 8px 16px;
+    color: #111111;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    background-color: #ffa500;
+}*/
+
+
 /* ------- HERO --------- */
 
 
@@ -215,7 +304,7 @@ button .btn-close {
 
 
 .hero-container {
-    margin-top: 50px;
+    margin-top: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -287,12 +376,16 @@ button .btn-close {
         margin: 100px 0 0 0;
     }
 
-    .product-shot {
-        margin-top: 30px;
-    }
+    /*.product-shot {
+        margin-top: 10px;
+    }*/
 }
 
-
+/*@media (max-width:767px) {
+    .brands{
+        
+    }
+}*/
 
 .email-2 {
     /*height: 100vh;*/
@@ -398,31 +491,44 @@ button .btn-close {
 
 .services-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);;
-   grid-template-rows: repeat(3, 1fr);;
-    gap: 12px;
-    padding: 20px;
-    margin-bottom: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust min-width as needed */
+    grid-gap: 20px; /* Add spacing between items */
+
+
 
 }
 
-.services-list h5 {
+.grid-item {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* Center content within each item */
     font-size: 14px;
     color: #fff;
-    border: 0.4px #9b9b9b solid;
+    border: 0.4px #111111 ;
+    background-color: #3a3a3a;
+    opacity: 0.9;
     border-radius: 4px;
     padding: 8px;
-}
+  }
+  
+  #grid-item-last{
+    grid-column-start: 2  ;
+    grid-column-end: 3;
+  }
 
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
     .services-list {
-        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-        gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
     }
-
+  }
+  @media(max-width: 425px){
+#grid-item-last{
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
+  }
 
 h5 img {
     width: 48px;
@@ -474,10 +580,8 @@ h5 img {
 
 
 .social-proof .cta-btn {
-    margin: 48px;
+    margin: 36px;
 }
-
-
 
 .footer {
     color: #fff;
@@ -502,24 +606,25 @@ h5 img {
     gap: 28px;
 }
 
-.sauti-info {
+/*.sauti-info {
     display: flex;
     align-items: center;
-}
+}*/
 
-.logo {
+/*.logo {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-right: 20px;
-}
+}*/
 
 .logo-wrapper {
-    gap: 20px;
+    /*gap: 10px;*/
+    align-items: flex-start;
 }
 
 .logo img {
-    max-width: 120px;
+    max-width: 200px;
 }
 
 .sign-off {
@@ -528,6 +633,12 @@ h5 img {
     text-align: center;
     color: #fff;
  
+}
+
+.sign-off p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .icons {
@@ -541,7 +652,7 @@ h5 img {
 
 .offerings {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 20px;
     flex: 1;
     flex-basis: 300px;
@@ -556,10 +667,11 @@ h5 img {
 .company,
 .legal {
     flex: 1;
+    color: #ffd150;
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -567,7 +679,7 @@ p {
     margin: 0;
     margin-bottom: 5px;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -616,9 +728,9 @@ p {
   }
   
   .slider-container{
-    /*background-color: #fff;*/
+    background-color: #444444;
     width: 350px;
-    margin: 50px 15px 90px 15px;
+   /* margin: 50px 15px 90px 15px;*/
     border-radius: 5px;
     box-shadow: 0 15px 45px -20px rgba(44, 44, 44, 0.49);
     transform: scale(0.9);
@@ -626,44 +738,6 @@ p {
     transition:  all 0.3s;
   }
   
- 
-  /*.owl-dots {
-    text-align: center; /* Center the navigation dots */
-/*}*/
-
-/*.owl-dot {
-    display: inline-block; /* Display dots in a line */
-    /*width: 12px; /* Set width of individual dots */
-    /*height: 12px; /* Set height of individual dots */
-   /* border-radius: 50%; /* Make dots circular */
-    /*background-color: #b1b1b1; /* Set background color of dots */
-    /*margin: 0 5px; /* Add space between dots */
-    /*cursor: pointer; /* Change cursor to pointer on hover */
-/*}*/
-
-/*.owl-dot.active {
-    background-color: #ffd150; /* Style active dot differently */
-/*}*/
- 
-  /*.owl-nav .owl-next{
-    position: absolute;
-    top:calc(50% - 25px);
-    right: 0;
-    opacity: 1;
-    font-size: 30px;
-    z-index: 1;
-    background-color: #b1b1b1;
-  }
-  
-  .owl-nav .owl-prev{
-    position: absolute;
-    top:calc(50% - 25px);
-    left: 0;
-    opacity: 1;
-    font-size: 30px;
-    z-index: 1;
-    background-color: #b1b1b1;
-  }*/
 
  .owl-stage-outer {
     padding: 30px 0;
