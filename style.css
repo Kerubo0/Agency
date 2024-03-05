@@ -261,8 +261,8 @@ button .btn-close {
 }
 
 .hero-image {
-    width: 72%;
-    min-width: 360px;
+    width: 70%;
+    min-width: 300px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -302,6 +302,7 @@ button .btn-close {
 .hero-btns{
     display: flex;
     flex-direction: column; /* Stack children vertically */
+    margin-left: 20px;
 }
 
 .container-hero{
@@ -367,6 +368,7 @@ button .btn-close {
 .screenshots {
     border-radius: 8px;
     height: 200px;
+    width: 550px ;
 }
 
 @media (min-width:768px){
@@ -377,15 +379,15 @@ button .btn-close {
 
 @media (min-width: 1435px){
     .screenshots{
-        height: 300px;
-        width: 400px;
+        height: 350px;
+        width: 450px;
         margin-left: 75px;
     }
 }
 
 @media (min-width: 1440px){
     .screenshots{
-        height: 350px;
+        height: 400px;
         width: 600px;
         margin-left: 75px;
     }
@@ -618,16 +620,7 @@ h5 img {
     margin: 50px;
 }
 
-@media (min-width: 780px){
-    .brands-2 .container .row{
-        margin: 150px;
-    }
-}
-
 @media (min-width: 1200px){
-    .brands-2 .container .row{
-        margin: 200px;
-    }
     .mailer{
         height: 50px;
         width: 180px;
@@ -688,9 +681,7 @@ h5 img {
     }
 }
 @media (min-width: 1351px){
-    .brands-2 .container .row{
-        margin: 250px;
-    }
+   
     .mailer{
         height: 80px;
         width: 210px;
@@ -748,6 +739,68 @@ h5 img {
     .mailchimp{
         height: 110px;
         width: 210px;
+    }
+}
+
+@media (min-width: 1500px){
+  
+    .mailer{
+        height: 200px;
+        width: 350px;
+    }
+    .asani{
+        height: 200px;
+        width: 450px;
+    }
+    .segment{
+        height: 200px;
+        width: 350px;
+    }
+    .klaviyo{
+        height: 200px;
+        width: 350px;
+    }
+    .omnisend{
+        height: 200px;
+        width: 300px;
+    }
+    .shopify{
+        height: 200px;
+        width: 300px;
+    }
+    .openai{
+        height: 200px;
+        width: 350px;
+    }
+    .activecamp{
+        height: 200px;
+        width: 300px;
+    }
+    .sem{
+        height: 200px;
+        width: 300px;
+    }
+    .justuno{
+        height: 200px;
+        width: 300px;
+    }
+    .yotpo{
+        width: 300px;
+    }
+    .sendin{
+         width: 350px;
+    }
+    .marketo{
+        height: 200px;
+        width: 350px;
+    }
+    .wardpres{
+        height: 200px;
+        width: 300px;
+    }
+    .mailchimp{
+        height: 200px;
+        width: 350px;
     }
 }
 
@@ -890,7 +943,7 @@ p {
   
   .slider-container{
     background-color: #444444;
-    width:245px;
+    width:250px;
    /* margin: 50px 15px 90px 15px;*/
     border-radius: 5px;
     box-shadow: 0 15px 45px -20px rgba(44, 44, 44, 0.49);
@@ -968,13 +1021,13 @@ p {
 }
 @media (min-width: 1200px) {
     .speedy{
-        width: 300px;
+        width: 200px;
     }
     .lovo{
-        width: 300px;
+        width: 200px;
     }
     .snovio{
-        width: 300px;
+        width: 250px;
     }
     .galactic{
         width:300px;
