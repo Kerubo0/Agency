@@ -368,7 +368,10 @@ button .btn-close {
 .screenshots {
     border-radius: 8px;
     height: 200px;
-    width: 550px ;
+    /*width: 550px ;*/
+    width: 650px;
+    margin: 5px;
+    
 }
 
 @media (min-width:768px){
@@ -377,9 +380,15 @@ button .btn-close {
     }
 }
 
+@media (min-width:1250px) {
+    .screenshots{
+        margin-left: 60px;
+    }
+}
+
 @media (min-width: 1435px){
     .screenshots{
-        height: 350px;
+        height: 250px;
         width: 450px;
         margin-left: 75px;
     }
@@ -387,17 +396,17 @@ button .btn-close {
 
 @media (min-width: 1440px){
     .screenshots{
-        height: 400px;
+        height: 300px;
         width: 600px;
-        margin-left: 75px;
+        margin-left: 65px;
     }
 }
 
 @media (min-width: 2000px){
     .screenshots{
-        height: 500px;
+        height: 450px;
         width: 900px;
-        margin-left: 75px;
+        margin-left: 70px;
     }
 }
 
