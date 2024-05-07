@@ -577,269 +577,48 @@ h5 img {
     font-size: 16px;
 }
 
-.social-proof-2 {
-   /* margin: 44px 0;*/
-   padding-bottom: 20px;
+/*  LOTS OF BIG BRANDS STYLING */
+.sample-three {
+    background-color: #3d3d3d;
 }
 
-.social-proof-2 h2.montserrat {
+.section-heading-2 h2{
+    color: white;
     text-align: center;
-    color: #fff;
+    font-family: "Montserrat",sans-serif;
+    margin: 30px ;
+    font-weight: 700;
 }
 
-.mailer{
-    height: 30px;
-    width: 130px;
-}
-.asani{
-    height: 50px;
-    width: 150px;
-}
-.segment{
-    height: 50px;
-    width: 150px;
-}
-.klaviyo{
-    height: 50px;
-    width: 150px;
-}
-.omnisend{
-    height: 50px;
-    width: 150px;
-}
-.shopify{
-    height: 50px;
-    width: 150px;
-}
-.openai{
-    height: 50px;
-    width: 150px;
-}
-.activecamp{
-    height: 50px;
-    width: 150px;
-}
-.sem{
-    height: 70px;
-    width: 150px;
-}
-.justuno{
-    height: 40px;
-    width: 180px;
-}
-.yotpo{
-    width: 100px;
-}
-.sendin{
-     width: 180px;
-}
-.marketo{
-    height: 30px;
-    width: 150px;
-}
-.wardpres{
-    height: 40px;
-    width: 150px;
-}
-.mailchimp{
-    height: 50px;
-    width: 150px;
+.brand-icons-2 {
+    display: grid;
+    grid-template-rows: repeat(5, auto); /* Three rows with equal height */
+    gap: 10px; /* Gap between grid items */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 25px;
 }
 
-.brands-2 .container .row{
-    margin: 50px;
-}
+.brand-icons-2 img {
+    max-width: 100%; /* Ensures images don't exceed their container's width */
+    height: auto; /* Maintains aspect ratio */
+  }
 
-@media (min-width: 1200px){
-    .mailer{
-        height: 50px;
-        width: 180px;
-    }
-    .asani{
-        height: 80px;
-        width: 180px;
-    }
-    .segment{
-        height: 80px;
-        width: 180px;
-    }
-    .klaviyo{
-        height: 80px;
-        width: 180px;
-    }
-    .omnisend{
-        height: 80px;
-        width: 180px;
-    }
-    .shopify{
-        height: 80px;
-        width: 180px;
-    }
-    .openai{
-        height: 80px;
-        width: 180px;
-    }
-    .activecamp{
-        height: 80px;
-        width: 180px;
-    }
-    .sem{
-        height: 100px;
-        width: 180px;
-    }
-    .justuno{
-        height: 70px;
-        width: 210px;
-    }
-    .yotpo{
-        width: 130px;
-    }
-    .sendin{
-         width: 210px;
-    }
-    .marketo{
-        height: 50px;
-        width: 180px;
-    }
-    .wardpres{
-        height: 70px;
-        width: 180px;
-    }
-    .mailchimp{
-        height: 80px;
-        width: 180px;
-    }
-}
-@media (min-width: 1351px){
-   
-    .mailer{
-        height: 80px;
-        width: 210px;
-    }
-    .asani{
-        height: 110px;
-        width: 210px;
-    }
-    .segment{
-        height: 110px;
-        width: 210px;
-    }
-    .klaviyo{
-        height: 110px;
-        width: 210px;
-    }
-    .omnisend{
-        height: 110px;
-        width: 210px;
-    }
-    .shopify{
-        height: 100px;
-        width: 210px;
-    }
-    .openai{
-        height: 110px;
-        width: 210px;
-    }
-    .activecamp{
-        height: 110px;
-        width: 210px;
-    }
-    .sem{
-        height: 130px;
-        width: 210px;
-    }
-    .justuno{
-        height: 100px;
-        width: 240px;
-    }
-    .yotpo{
-        width: 160px;
-    }
-    .sendin{
-         width: 240px;
-    }
-    .marketo{
-        height: 80px;
-        width: 210px;
-    }
-    .wardpres{
-        height: 100px;
-        width: 210px;
-    }
-    .mailchimp{
-        height: 110px;
-        width: 210px;
-    }
-}
+  .first-row-2, .second-row-2, .third-row-2, .fourth-row-2 , .fifth-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+    gap: 10px; /* Gap between grid items in each row */
+    justify-content: center;
+    align-items: center;
+  }
 
-@media (min-width: 1500px){
-  
-    .mailer{
-        height: 200px;
-        width: 350px;
-    }
-    .asani{
-        height: 200px;
-        width: 450px;
-    }
-    .segment{
-        height: 200px;
-        width: 350px;
-    }
-    .klaviyo{
-        height: 200px;
-        width: 350px;
-    }
-    .omnisend{
-        height: 200px;
-        width: 300px;
-    }
-    .shopify{
-        height: 200px;
-        width: 300px;
-    }
-    .openai{
-        height: 200px;
-        width: 350px;
-    }
-    .activecamp{
-        height: 200px;
-        width: 300px;
-    }
-    .sem{
-        height: 200px;
-        width: 300px;
-    }
-    .justuno{
-        height: 200px;
-        width: 300px;
-    }
-    .yotpo{
-        width: 300px;
-    }
-    .sendin{
-         width: 350px;
-    }
-    .marketo{
-        height: 200px;
-        width: 350px;
-    }
-    .wardpres{
-        height: 200px;
-        width: 300px;
-    }
-    .mailchimp{
-        height: 200px;
-        width: 350px;
-    }
-}
-
-
-
-.social-proof .cta-btn {
-    margin: 36px;
-}
-
+  .btn-stars-2{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
 
 
 footer {
