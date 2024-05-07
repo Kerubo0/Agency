@@ -840,118 +840,6 @@ h5 img {
     margin: 36px;
 }
 
-/*.footer {
-    color: #fff;
-    padding: 30px 0;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 28px 80px 0 28px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex: 1;
-    flex-basis: 300px;
-    gap: 28px;
-}
-
-
-
-.logo-wrapper {
-    /*gap: 10px;*/
-   /* align-items: flex-start;
-}
-
-.logo img {
-    max-width: 200px;
-}
-
-.sign-off {
-    margin-top: 10px;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
- 
-}
-
-.sign-off p{
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.icons {
-    margin-top: 5px;
-}
-
-.icons i {
-    color: #fff;
-    cursor: pointer;
-}
-
-.offerings {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 20px;
-    flex: 1;
-    flex-basis: 300px;
-}
-
-.offerings > div {
-    margin-right: 20px;
-}
-
-.products,
-.resources,
-.company,
-.legal {
-    flex: 1;
-    color: #fff;
-}
-
-h5 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-p {
-    margin: 0;
-    margin-bottom: 5px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.copyright-call {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.copyright-call p {
-    color: #c9c8c8;
-}
-
-@media (max-width: 800px) {
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .sauti-info {
-        margin-bottom: 20px;
-    }
-
-    .offerings {
-       grid-template-columns: repeat(1, 1fr);
-    }
-}*/
 
 
 footer {
@@ -1097,150 +985,35 @@ h5{
     }
   }
   
-.brands .container {
-    max-width: 1700px;
-    padding: 20px;
+
+
+/* BRAND ICONS SECTION  */
+
+.sample-two{
+    background-color: #212121;
 }
 
-.brands .container.text-center .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-}
-
-.brands .container.text-center .col {
-    /*flex: 1;*/
-    margin: 20px; 
+.section-heading{
+    color: white;
     text-align: center;
-    max-width: 20%; 
+    margin: 20px;
+    font-family: "montserrat";
 }
 
-
-@media (max-width: 768px) { 
-    .brands .container.text-center .col {
-        width:100% 
-    }
-}
-@media (min-width: 1200px) {
-    .speedy{
-        width: 200px;
-    }
-    .lovo{
-        width: 200px;
-    }
-    .snovio{
-        width: 250px;
-    }
-    .galactic{
-        width:300px;
-    }
-    .think-social{
-        width: 300px;
-    }
-    .multiverse{
-        width: 300px;
-    }
-    .go-charlie{
-        width: 250px;
-    }
-    .genius{
-        width: 150px;
-        height: 100px;
-    }
-    .whisker{
-        width: 300px;
-    }
-}
-
-@media (max-width: 1050px) {
-    .speedy{
-        width: 200px;
-    }
-    .lovo{
-        width: 200px;
-    }
-    .snovio{
-        width: 200px;
-    }
-    .galactic{
-        width:200px;
-    }
-    .think-social{
-        width: 200px;
-    }
-    .multiverse{
-        width: 200px;
-    }
-    .go-charlie{
-        width: 200px;
-    }
-    .genius{
-        width: 120px;
-    }
-    .whisker{
-        width: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .speedy{
-        width: 100px;
-    }
-    .lovo{
-        width: 100px;
-    }
-    .snovio{
-        width: 100px;
-    }
-    .galactic{
-        width:120px;
-    }
-    .think-social{
-        width: 120px;
-    }
-    .multiverse{
-        width: 120px;
-    }
-    .go-charlie{
-        width: 120px;
-    }
-    .genius{
-        width: 100px;
-    }
-    .whisker{
-        width: 120px;
-    }
-}
-
-
-
-@media (max-width: 350px) {
-    .speedy{
-        width: 70px;
-    }
-    .lovo{
-        width: 70px;
-    }
-    .snovio{
-        width: 70px;
-    }
-    .galactic{
-        width:100px;
-    }
-    .think-social{
-        width: 100px;
-    }
-    .multiverse{
-        width: 100px;
-    }
-    .go-charlie{
-        width: 100px;
-    }
-    .genius{
-        width: 70px;
-    }
-    .whisker{
-        width: 120px;
-    }
-}
-
+.brand-icons {
+    display: grid;
+    grid-template-rows: repeat(3, auto); /* Three rows with equal height */
+    gap: 10px; /* Gap between grid items */
+    margin: 0px 30px 0px 30px;
+  }
+  
+  .brand-icons img {
+    max-width: 100%; /* Ensures images don't exceed their container's width */
+  }
+  
+  .first-row, .second-row, .third-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+    gap: 10px; /* Gap between grid items in each row */
+  }
+  
